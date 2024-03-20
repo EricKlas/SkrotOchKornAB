@@ -1,24 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakta oss</title>
 </head>
+
 <body>
-    <div>
-        <img src="images/office.png" width="300"> 
+    <header style="padding-left: 30px;">
+        <img src="images/office.png" width="300">
         <br>
-        <a href="index.html">Startsidan</a>
+        <a href="index.html"> Startsidan</a>
         <a href="products.html">Produkter</a>
-        <a href="contactus.html"><strong>Kontakta oss</strong></a>
+        <a href="mediapage.html">Media sidan</a>
+        <a href="contactus.html">Kontakta oss</a>
         <a href="aboutus.html">Om oss</a>
-    </div>
-    
-    <div>
-        <label for="name">Namn</label>
-        <input id="name" name="name" type="text">
-    </div>
-    
+    </header>
+
+    <main style="padding-left: 30px; padding-top: 50px">
+        <form>
+
+            <div style="padding-bottom: 10px;">
+                <label for="name">Namn</label>
+                <input id="name" name="name" type="text">
+            </div>
+            <div style="padding-bottom: 10px;">
+                <label for="address">Adress</label>
+                <input id="address" name="address" type="text">
+            </div>
+            <div style="padding-bottom: 10px;">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+            </div>
+            <div style="padding-bottom: 10px;">
+                <label for="telnum">Telefonnummer</label>
+                <input id="telnum" name="telnum" type="text">
+            </div>
+            <div>
+                <p>Är du privat eller företag?</p>
+                <input type="radio" id="private" name="usertype">
+                <label for="private">Privat person</label>
+                <input type="radio" id="business" name="usertype">
+                <label for="business">Företag</label>
+                <br>
+            </div>
+            <div style="padding-bottom: 30px;">
+                <p>Ifall du med ett företag hur många anställda är ni?</p>
+                <input type="radio" id="small" name="employed">
+                <label for="small">1-100 anställda</label>
+
+                <input type="radio" id="medium" name="employed">
+                <label for="medium">101-1000 anställda</label>
+
+                <input type="radio" id="largeg" name="employed">
+                <label for="large">1000+ anställda</label>
+            </div>
+
+            <div style="padding-bottom: 30px;">
+                <label for="businessquestion">har du någon fråga till oss som företag?</label>
+                <br>
+                <textarea id="businessquestion" name="businessquestion" rows="5" cols="80"></textarea>
+            </div>
+
+            <div style="padding-bottom: 10px">
+                <input type="checkbox" id="newsletter" name="newsletter" value="ja">
+                <label for="newsletter">Vill du ha nyhetsbrev?</label>
+                <input type="hidden" name="newsletter" value="nej">
+            </div>
+
+            <div>
+                <input type="checkbox" id="contactmethodphone" name="contactmethodphone" value="ja">
+                <label for="contactmethodphone">Vill du att vi kontaktar dig via telefon?</label>
+                <input type="hidden" name="contactmethodphone" value="nej">
+            </div>
+
+            <div style="padding-top: 30px;">
+                <input type="submit" value="Registera dig!">
+            </div>
+        </form>
+    </main>
+
+
+    <footer style="padding-top: 70px; padding-left: 70px;">
+        <iframe src="copy.html" width="350" height="315" style="border: none"></iframe>
+    </footer>
 </body>
+
 </html>
