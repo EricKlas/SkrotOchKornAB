@@ -1,1 +1,2 @@
-Project to learn html
+Project to learn Html, CSS and javascript
+
