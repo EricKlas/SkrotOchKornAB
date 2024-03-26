@@ -1,0 +1,74 @@
+header
+{
+    height: 255px;
+    background-image: url("../images/stars.jpg");
+    background-size: cover;
+}
+
+li
+{
+    display:inline; 
+}
+
+.navbuttons
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(188, 188, 188, 0.8);
+    padding: 0.5em;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.productstyle
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(92, 64, 51);
+}
+
+table, th, td {
+    border: 1px solid;
+    border-color: green;
+}
+
+.navbuttons:hover{
+    background-color: rgba(188, 188, 188, 1);
+}
+
+.productmain
+{
+    padding-top: 50px;
+    background-color: bisque;
+}
+
+.footerstyle
+{
+    color: rgb(102, 71, 42); 
+}
+
+footer
+{
+    background-color:rgb(167, 214, 128);
+}
+.mediamain
+{
+    background-image: url("../images/filmstrip.png" );
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+}
+
+.mediabox
+{
+    opacity: 1;
+    background-image: url("../images/windshield.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 300px;
+    width: 400px;
+
+    text-align: center;
+
+    margin: auto;
+}
+
