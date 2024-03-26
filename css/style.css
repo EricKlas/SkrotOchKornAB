@@ -1,74 +1,65 @@
-header
-{
-    height: 255px;
-    background-image: url("../images/stars.jpg");
+
+.logo {
+    background-image: url("../images/office.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+    height: 200px;
+    width: 300px;
 }
 
-li
-{
-    display:inline; 
-}
-
-.navbuttons
-{
+.navbuttons {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgba(188, 188, 188, 0.8);
+    display:block;
+    border: 1px solid White;
+    margin: 1px;
     padding: 0.5em;
     text-decoration: none;
     border-radius: 15px;
 }
 
-.productstyle
-{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(92, 64, 51);
-}
-
-table, th, td {
-    border: 1px solid;
-    border-color: green;
-}
-
-.navbuttons:hover{
+.navbuttons:hover {
     background-color: rgba(188, 188, 188, 1);
+    
 }
-
-.productmain
+.headerbackground
 {
-    padding-top: 50px;
-    background-color: bisque;
-}
-
-.footerstyle
-{
-    color: rgb(102, 71, 42); 
-}
-
-footer
-{
-    background-color:rgb(167, 214, 128);
-}
-.mediamain
-{
-    background-image: url("../images/filmstrip.png" );
-    background-repeat: no-repeat;
+    height: 255px;
+    background-image: url("../images/stars.jpg");
     background-size: cover;
-    opacity: 0.4;
-}
 
-.mediabox
-{
-    opacity: 1;
-    background-image: url("../images/windshield.jpeg");
+}
+.headerdiv
+{ 
+    grid-area: header;
+    height: 255px;
+    background-image: url("../images/stars.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-
-    height: 300px;
-    width: 400px;
-
-    text-align: center;
-
-    margin: auto;
+}
+.vertical-menu{ grid-area: menu;}
+.maindiv{ grid-area: main;}
+.rightdiv{ grid-area: right;}
+.footerdiv 
+{ 
+    grid-area: footer;
+    background-color: greenyellow;
+    height: 165px;
 }
 
+.grid-container-area 
+{
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main main right'
+        'footer footer footer footer footer footer';
+        grid-gap: 10px;
+        padding: 5px;
+}
+
+.copybox
+{
+    height: 165px;
+    border: none;
+}
