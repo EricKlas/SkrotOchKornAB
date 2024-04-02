@@ -8,55 +8,50 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <header>
-        <div class="logo">
-
-        </div>
-        <div>
-            <ul>
-                <li>
-                    <a href="index.html" class="navbuttons"> Startsidan</a>
-                </li>
-                <li>
-                    <a href="products.html" class="navbuttons">Produkter</a>
-                </li>
-                <li>
-                    <a href="mediapage.html" class="navbuttons">Media sidan</a>
-                </li>
-                <li>
-                    <a href="contactus.html" class="navbuttons">Kontakta oss</a>
-                </li>
-                <li>
-                    <a href="aboutus.html" class="navbuttons">Om oss</a>
-                </li>
-            </ul>
-        </div>
+<body class="grid-container-area">
+    <header class="headerdiv">
+        <div class="logo"></div>
+        <h1 class="white-color"> Skrot och Korn AB</h1>
     </header>
-    <main class="background-bisque background-filmstrip">
-        <div class="mediabox">
-            <h1>Här har vi videos och bilder på våra maskiner i arbete</h1>
-            <h3>Här kan vi see en bulldozer i arbete</h3>
-            <iframe src="https://www.youtube.com/embed/hJIBp98DztA?si=ftNjbOyVcilr2EBL"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </div>
-            <h3>Här så kan vi se en grävmaskin arbeta</h3>
-            <iframe src="https://www.youtube.com/embed/2lDcyfgIJLs?si=tudco8y8Ft1rcHgl" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
 
-            <h3>här så lyfter en kran en annan kran</h3>
-            <iframe src="https://www.youtube.com/embed/MqQ1-5VkNz8?si=PxEmT08esGUExB_E" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+    <nav class="vertical-menu">
+        <a href="index.html" class="navbuttons"> Startsidan</a>
+        <a href="products.html" class="navbuttons">Produkter</a>
+        <a href="mediapage.html" class="navbuttons">Media sidan</a>
+        <a href="contactus.html" class="navbuttons">Kontakta oss</a>
+        <a href="aboutus.html" class="navbuttons">Om oss</a>
+    </nav>
+
+
+
+    <main class="maindiv productstyle">
+        <div class="filmrollbackground">
+            <div class="iframe-video-container">
+                <h1>Här har vi videos och bilder på våra maskiner i arbete</h1>
+                <h2>Här kan vi see en bulldozer i arbete</h2>
+                <iframe class="iframe-video-size" src="https://www.youtube.com/embed/hJIBp98DztA?si=ftNjbOyVcilr2EBL"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="iframe-video-container">
+                <h2>Här så kan vi se en grävmaskin arbeta</h2>
+                <iframe class="iframe-video-size" src="https://www.youtube.com/embed/2lDcyfgIJLs?si=tudco8y8Ft1rcHgl"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="iframe-video-container">
+                <h2>här så lyfter en kran en annan kran</h2>
+                <iframe class="iframe-video-size" src="https://www.youtube.com/embed/MqQ1-5VkNz8?si=PxEmT08esGUExB_E"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
         </div>
     </main>
-    <footer>
-        <iframe src="copy.html" class="footerbox"></iframe>
+    <footer class="footerdiv">
+        <iframe src="copy.html" class="copybox"></iframe>
     </footer>
 </body>
 

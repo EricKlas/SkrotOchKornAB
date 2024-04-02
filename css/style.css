@@ -1,9 +1,45 @@
+body
+{
+    background-color:azure;
+}
+
+h1
+{
+    font-size: 40px;
+}
+
+.productstyle
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(92, 64, 51);
+}
+
+.white-color
+{
+    color: white;
+}
+
+
+
+table tr th{
+    border: 1px solid green;
+}
+
+table tr td {
+    border: 1px solid green;
+}
+
+.tableempty
+{
+    border: 0px solid green;
+}
 
 .logo {
     background-image: url("../images/office.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 50px;
+    margin-right: 20px;
     height: 200px;
     width: 300px;
 }
@@ -11,7 +47,7 @@
 .navbuttons {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgba(188, 188, 188, 0.8);
-    display:block;
+    display: block;
     border: 1px solid White;
     margin: 1px;
     padding: 0.5em;
@@ -21,45 +57,129 @@
 
 .navbuttons:hover {
     background-color: rgba(188, 188, 188, 1);
-    
+
 }
-.headerbackground
-{
+
+.headerbackground {
     height: 255px;
     background-image: url("../images/stars.jpg");
     background-size: cover;
 
 }
-.headerdiv
-{ 
+
+.headerdiv {
     grid-area: header;
     height: 255px;
     background-image: url("../images/stars.jpg");
     background-size: cover;
+    display: flex; 
+    align-items: center;
+    padding: 0 20px;
 }
-.vertical-menu{ grid-area: menu;}
-.maindiv{ grid-area: main;}
-.rightdiv{ grid-area: right;}
-.footerdiv 
-{ 
+
+.vertical-menu {
+    grid-area: menu;
+    background-color: gray;
+}
+
+.maindiv {
+    grid-area: main;
+    background-color: beige;
+}
+
+.rightdiv {
+    grid-area: right;
+}
+
+.footerdiv {
     grid-area: footer;
     background-color: greenyellow;
     height: 165px;
 }
 
-.grid-container-area 
-{
+.grid-container-area {
     display: grid;
     grid-template-areas:
         'header header header header header header'
         'menu main main main main right'
         'footer footer footer footer footer footer';
-        grid-gap: 10px;
-        padding: 5px;
+    grid-gap: 10px;
+    padding: 5px;
 }
 
-.copybox
-{
+.copybox {
     height: 165px;
     border: none;
+}
+
+.copy-background
+{
+    background-color: greenyellow;
+}
+
+.filmrollbackground {
+    position: relative;
+    z-index: 1;
+}
+
+.filmrollbackground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/filmroll.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.iframe-video-container
+{
+    background-color: lightskyblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 600px;
+    width: 600px;
+
+    text-align: center;
+
+    margin: auto;
+}
+
+.iframe-video-size
+{
+    height: 400px;
+    width: 600px;
+}
+
+.background-lightskyblue
+{
+    background-color: lightskyblue;
+}
+
+.flex-container
+{
+    display:flex;
+}
+
+.flex-container > div
+{
+    background-color: lightgray;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+.picturesize
+{
+    width: 500px;
+    height: 300px;
+}
+
+.rest1
+{
+    flex-grow: 1;
 }

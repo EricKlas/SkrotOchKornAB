@@ -8,35 +8,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <header>
-        <div class="logo">
-
-        </div>
-        <div>
-            <ul>
-                <li>
-                    <a href="index.html" class="navbuttons"> Startsidan</a>
-                </li>
-                <li>
-                    <a href="products.html" class="navbuttons">Produkter</a>
-                </li>
-                <li>
-                    <a href="mediapage.html" class="navbuttons">Media sidan</a>
-                </li>
-                <li>
-                    <a href="contactus.html" class="navbuttons">Kontakta oss</a>
-                </li>
-                <li>
-                    <a href="aboutus.html" class="navbuttons">Om oss</a>
-                </li>
-            </ul>
-        </div>
+<body class="grid-container-area">
+    <header class="headerdiv">
+        <div class="logo"></div>
+        <h1 class="white-color"> Skrot och Korn AB</h1>
     </header>
+    
+        <nav class="vertical-menu">
+            <a href="index.html" class="navbuttons"> Startsidan</a>
+            <a href="products.html" class="navbuttons">Produkter</a>
+            <a href="mediapage.html" class="navbuttons">Media sidan</a>
+            <a href="contactus.html" class="navbuttons">Kontakta oss</a>
+            <a href="aboutus.html" class="navbuttons">Om oss</a>
+        </nav>
 
-    <main style="padding-left: 30px; padding-top: 50px">
+    <main class="maindiv">
         <form>
-
             <div style="padding-bottom: 10px;">
                 <label for="name">Namn</label>
                 <input id="name" name="name" type="text">
@@ -69,8 +56,11 @@
                 <input type="radio" id="medium" name="employed">
                 <label for="medium">101-1000 anställda</label>
 
-                <input type="radio" id="largeg" name="employed">
+                <input type="radio" id="large" name="employed">
                 <label for="large">1000+ anställda</label>
+
+                <input type="radio" id="none" name="employed">
+                <label for="none">0 anställda</label>
             </div>
 
             <div style="padding-bottom: 30px;">
@@ -98,8 +88,8 @@
     </main>
 
 
-    <footer>
-        <iframe src="copy.html" class="footerbox"></iframe>
+    <footer class="footerdiv">
+        <iframe src="copy.html" class="copybox"></iframe>
     </footer>
 </body>
 
